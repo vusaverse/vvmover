@@ -1,0 +1,38 @@
+Package: vvmover
+Title: Read And Write Data
+Version: 1.5.6.9000
+Authors@R: c(
+    person("Hadley", "Wickham", email = "hadley@rstudio.com", role = "cre"),
+    person("Winston", "Chang", email = "winston@rstudio.com", role = "aut"),
+    person("RStudio", role = c("cph", "fnd")))
+Description: This package provides numerous functions to read and write data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Imports: 
+    cli,
+    digest,
+    dplyr,
+    fst,
+    lubridate,
+    purrr,
+    readr,
+    readxl,
+    slackr,
+    stringi,
+    stringr,
+    tibble,
+    tidyr,
+    utils,
+    vusa,
+    vvauditor,
+    vvcommander,
+    vvconverter
+Suggests: 
+    dataMaid
+Remotes: 
+    vusaverse/vvauditor,
+    vusaverse/vvcommander,
+    vusaverse/vvconverter
+
