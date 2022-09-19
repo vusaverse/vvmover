@@ -25,7 +25,6 @@ Imports:
     tibble,
     tidyr,
     utils,
-    vusa,
     vvauditor,
     vvcommander,
     vvconverter
