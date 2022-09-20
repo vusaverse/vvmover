@@ -27,7 +27,7 @@ get_recent_file_date_modified <- function(path, match, echo = T) {
   files <- rownames(file_details)
   for (file in files) {
     if(
-      grep(match, file, fixed=TRUE)
+      grepl(match, file, fixed=TRUE)
     ) {
       this_file <- file
       break
