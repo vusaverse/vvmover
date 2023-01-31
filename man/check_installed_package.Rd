@@ -11,7 +11,14 @@ check_installed_package(package_name, check = FALSE)
 
 \item{check}{the function should work as a boolean operator}
 }
+\value{
+Boolean value whether package is installed.
+}
 \description{
 Check if a package is installed. If not,
 throw an error message
+}
+\examples{
+  check_installed_package("dplyr")
+
 }

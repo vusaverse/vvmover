@@ -11,6 +11,9 @@ get_recent_file_date_filename_ymd(path, match)
 
 \item{match}{The search term to match in the file name.}
 }
+\value{
+The most recent file
+}
 \description{
 This function determines the path of the most recent version of a file in
 a folder. Sorting is determined by file name

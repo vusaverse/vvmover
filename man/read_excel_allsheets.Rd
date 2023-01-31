@@ -9,6 +9,13 @@ read_excel_allsheets(filename)
 \arguments{
 \item{filename}{Name of Excel file}
 }
+\value{
+Dataframe
+}
 \description{
 Read in all sheets in an Excel file.
+}
+\examples{
+read_excel_allsheets(readxl::readxl_example("clippy.xls"))
+
 }

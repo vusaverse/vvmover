@@ -5,12 +5,13 @@
 #' @param Folder_dest Destination folder.
 #' @param pattern Pattern to match files in source folder on.
 #' @param recursive Default: FALSE. Whether to use recursive search in directory.
+#' @return message
 #' @export
-move_files_pattern <- function(Folder_origin, Folder_dest, pattern, recursive = F) {
+move_files_pattern <- function(Folder_origin, Folder_dest, pattern, recursive = FALSE) {
 
     Filepaths_origin <- list.files(path       = Folder_origin,
                                    pattern    = pattern,
-                                   full.names = T,
+                                   full.names = TRUE,
                                    recursive  = recursive)
 
     if (length(Filepaths_origin) == 0) {
@@ -22,6 +23,6 @@ move_files_pattern <- function(Folder_origin, Folder_dest, pattern, recursive = 
     Moved <- file.rename(Filepaths_origin,
                          Filepaths_dest)
 
-    print(paste("Aantal bestanden met patroon:", pattern, "verplaatst:", length(Filepaths_dest[Moved])))
+    message(paste("Number of files matching the pattern:", pattern, "are moved:", length(Filepaths_dest[Moved])))
 
 }

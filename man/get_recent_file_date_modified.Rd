@@ -2,9 +2,12 @@
 % Please edit documentation in R/get_recent_file_date_modified.R
 \name{get_recent_file_date_modified}
 \alias{get_recent_file_date_modified}
-\title{Get recent file date modified}
+\title{Get recent file date modified
+This function determines the path of the most recent version of a file in
+a folder. The sorting is determined based on the date of the last
+change.}
 \usage{
-get_recent_file_date_modified(path, match, echo = T)
+get_recent_file_date_modified(path, match, echo = TRUE)
 }
 \arguments{
 \item{path}{The path to search for the file.}
@@ -14,7 +17,11 @@ get_recent_file_date_modified(path, match, echo = T)
 \item{echo}{Print the date the file was last modified
 in the console.}
 }
+\value{
+The most recent file.
+}
 \description{
+Get recent file date modified
 This function determines the path of the most recent version of a file in
 a folder. The sorting is determined based on the date of the last
 change.

@@ -7,16 +7,17 @@
 
 #'Get recent file
 #'
-#'Is a wrapper around get_recent_file_date_filename_ymd en
-#'get_recent_file_date_modified and retrieves the most recent version of a
+#' Is a wrapper around get_recent_file_date_filename_ymd en
+#' get_recent_file_date_modified and retrieves the most recent version of a
 #' file based on naming or date modified.
-#'@param path The path to search for the file
-#'@param match The search term matched in the file name
-#'@param date_type The way to find the recent file
-#'date_type = "modified" is based on customization, date_type = "filename_ymd"
+#' @param path The path to search for the file
+#' @param match The search term matched in the file name
+#' @param date_type The way to find the recent file
+#' date_type = "modified" is based on customization, date_type = "filename_ymd"
 #' is based on file name.
-#'@family Get recent files
-#'@export
+#' @return The most recent file.
+#' @family Get recent files
+#' @export
 get_recent_file <- function(path, match, date_type = "modified") {
   ## Wrapper around functions get recent file based on
   ## naming (filename_ymd) or date(date_modified)

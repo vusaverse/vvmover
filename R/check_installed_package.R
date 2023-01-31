@@ -5,6 +5,10 @@
 #'
 #' @param package_name the name of the package (quoted)
 #' @param check the function should work as a boolean operator
+#' @return Boolean value whether package is installed.
+#' @examples
+#'   check_installed_package("dplyr")
+#'
 #' @export
 check_installed_package <- function(package_name, check = FALSE) {
   if (check) {

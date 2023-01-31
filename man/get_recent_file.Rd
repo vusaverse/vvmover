@@ -15,6 +15,9 @@ get_recent_file(path, match, date_type = "modified")
 date_type = "modified" is based on customization, date_type = "filename_ymd"
 is based on file name.}
 }
+\value{
+The most recent file.
+}
 \description{
 Is a wrapper around get_recent_file_date_filename_ymd en
 get_recent_file_date_modified and retrieves the most recent version of a

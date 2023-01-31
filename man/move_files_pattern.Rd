@@ -4,7 +4,7 @@
 \alias{move_files_pattern}
 \title{move files pattern}
 \usage{
-move_files_pattern(Folder_origin, Folder_dest, pattern, recursive = F)
+move_files_pattern(Folder_origin, Folder_dest, pattern, recursive = FALSE)
 }
 \arguments{
 \item{Folder_origin}{Source folder.}
@@ -14,6 +14,9 @@ move_files_pattern(Folder_origin, Folder_dest, pattern, recursive = F)
 \item{pattern}{Pattern to match files in source folder on.}
 
 \item{recursive}{Default: FALSE. Whether to use recursive search in directory.}
+}
+\value{
+message
 }
 \description{
 Move files in a directory based on regular expression

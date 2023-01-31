@@ -9,6 +9,13 @@ print_last_modified(path)
 \arguments{
 \item{path}{The file path}
 }
+\value{
+message
+}
 \description{
 This function prints the date a file was last modified
+}
+\examples{
+print_last_modified(readr::readr_example("mtcars.csv"))
+
 }

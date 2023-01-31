@@ -13,6 +13,13 @@ unzip_read_delim(zip_path, filename = NULL, ...)
 
 \item{...}{arguments to the readr::read_delim function. see: \link[readr]{read_delim}}
 }
+\value{
+Dataframe
+}
 \description{
 Extract a .zip archive and read it in with readr's read_delim function. The file is extracted to a temporary location, and then deleted after reading it.
+}
+\examples{
+unzip_read_delim(readr::readr_example("mtcars.csv.zip"))
+
 }

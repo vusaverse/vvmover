@@ -3,6 +3,10 @@
 #' Read in all sheets in an Excel file.
 #'
 #' @param filename Name of Excel file
+#' @examples
+#' read_excel_allsheets(readxl::readxl_example("clippy.xls"))
+#'
+#' @return Dataframe
 #'
 #' @export
 read_excel_allsheets <- function(filename) {

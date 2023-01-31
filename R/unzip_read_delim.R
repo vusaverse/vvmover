@@ -5,6 +5,10 @@
 #' @param zip_path The file path of the .zip archive
 #' @param filename OPTIONAL: The file name of the file in the .zip archive to be read. This parameter can be left empty if there is only 1 file in the archive.
 #' @param ... arguments to the readr::read_delim function. see: \link[readr]{read_delim}
+#' @examples
+#' unzip_read_delim(readr::readr_example("mtcars.csv.zip"))
+#'
+#' @return Dataframe
 #'
 #' @export
 unzip_read_delim <- function(zip_path, filename = NULL, ...) {
