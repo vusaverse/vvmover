@@ -13,3 +13,14 @@ print_last_modified <- function(path) {
   ## print this
   message(paste(basename(path), "last modified", Date))
 }
+
+#' get_last_modified_date
+#'
+#' @param file_path Path to the file.
+#'
+#' @return Date that file was last modified
+#' @export
+get_last_modifed_date <- function(file_path) {
+  Datetime <- format(file.info(file_path)$mtime, "%Y-%m-%d")
+  return(Datetime)
+}
