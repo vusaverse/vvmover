@@ -15,11 +15,10 @@ RoxygenNote: 7.2.3
 Imports: 
     dplyr,
     janitor,
+    lubridate,
     magrittr,
     purrr,
     readr,
     readxl,
     tibble,
     utils
-Suggests: 
-    dataMaid
