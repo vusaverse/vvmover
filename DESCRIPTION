@@ -14,8 +14,10 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports: 
     dplyr,
+    janitor,
+    magrittr,
     readr,
     readxl,
-    utils,
+    utils
 Suggests: 
     dataMaid
