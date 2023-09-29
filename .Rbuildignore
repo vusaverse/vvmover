@@ -4,3 +4,4 @@
 ^build_vvMover.R
 ^install_latest_vvCommander.R
 ^config.yml$
+^\.github$
