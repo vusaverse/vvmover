@@ -41,9 +41,6 @@ create_documentation <- function(df, doc_file_name) {
   ##
   distribution <- purrr::map_chr(df, get_distribution)
 
-  ## Create an empty column for comments
-  comments <- ""
-
   ## Step 2: Create a dataframe
   ## Combine vectors to form a table
   documentation_table <- tibble::tibble(
@@ -54,7 +51,6 @@ create_documentation <- function(df, doc_file_name) {
     upper = upper,
     unique_identifier = unique_identifier,
     percentages = percentages,
-    distribution = distribution,
-    comments = comments
+    distribution = distribution
   )
 }
