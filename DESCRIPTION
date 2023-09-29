@@ -16,8 +16,10 @@ Imports:
     dplyr,
     janitor,
     magrittr,
+    purrr,
     readr,
     readxl,
+    tibble,
     utils
 Suggests: 
     dataMaid
