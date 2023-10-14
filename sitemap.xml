@@ -16,6 +16,9 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/add_current_datetime_column.html</loc>
+  </url>
+  <url>
     <loc>/reference/check_installed_package.html</loc>
   </url>
   <url>
@@ -67,7 +70,13 @@
     <loc>/reference/print_last_modified.html</loc>
   </url>
   <url>
+    <loc>/reference/random_string_vector.html</loc>
+  </url>
+  <url>
     <loc>/reference/read_excel_allsheets.html</loc>
+  </url>
+  <url>
+    <loc>/reference/save_session_info_to_file.html</loc>
   </url>
   <url>
     <loc>/reference/unzip_read_delim.html</loc>
