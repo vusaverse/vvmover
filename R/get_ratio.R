@@ -6,13 +6,11 @@
 #' @family assertions
 #' @family tests
 get_ratio <- function(data_vector) {
-
   # Initialize percent variable
   percent <- NULL
 
   # Check if the data_vector meets certain conditions
   if (!lubridate::is.POSIXct(data_vector)) {
-
     # Create frequency table of the data_vector and sort it by descending order
     frequency_table <- janitor::tabyl(data_vector) %>%
       dplyr::arrange(dplyr::desc(percent)) %>%
@@ -38,9 +36,7 @@ get_ratio <- function(data_vector) {
     # Combines the categories and percentages into a single string
     result <- paste0(categories, ": (", percentages, "%)", collapse = " | ")
     return(result)
-  }
-  else if (lubridate::is.POSIXct(data_vector)) {
-
+  } else if (lubridate::is.POSIXct(data_vector)) {
     # Create frequency table of the data_vector and sort it by descending order and keep top 10 values
     frequency_table <- janitor::tabyl(data_vector) %>%
       dplyr::arrange(dplyr::desc(percent)) %>%
@@ -72,8 +68,7 @@ get_ratio <- function(data_vector) {
       result <- paste0(categories, ": (", percentages, "%)", collapse = " | ")
       return(result)
     }
-  }
-  else{
+  } else {
     return("Too many categories")
   }
 }

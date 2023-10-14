@@ -19,6 +19,6 @@ Check if a package is installed. If not,
 throw an error message
 }
 \examples{
-  check_installed_package("dplyr")
+check_installed_package("dplyr")
 
 }

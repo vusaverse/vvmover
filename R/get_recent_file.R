@@ -5,7 +5,7 @@
 ## get_recent_file_date_modified and retrieves the most recent version of a
 ## file based on naming or date modified.
 
-#'Get recent file
+#' Get recent file
 #'
 #' Is a wrapper around get_recent_file_date_filename_ymd en
 #' get_recent_file_date_modified and retrieves the most recent version of a

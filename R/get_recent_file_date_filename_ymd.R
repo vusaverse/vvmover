@@ -1,6 +1,6 @@
-#'Get recent file date filename ymd
+#' Get recent file date filename ymd
 #'
-#'This function determines the path of the most recent version of a file in
+#' This function determines the path of the most recent version of a file in
 #' a folder. Sorting is determined by file name
 #' where it is a condition that the filename starts with ymd encoding.
 #' @param path The path to search for the file.
@@ -8,7 +8,7 @@
 #' @return The most recent file
 #' @family Get recent files
 #' @export
-get_recent_file_date_filename_ymd <- function(path, match){
+get_recent_file_date_filename_ymd <- function(path, match) {
   ## List the files based on match and
   ## Sort descending by name with date format (most recent files
   ## first. Condition is file names starting with ymd quote
@@ -22,10 +22,9 @@ get_recent_file_date_filename_ymd <- function(path, match){
     ## Print found file name
     message(paste("Most recent file is", basename(thisfile)))
     return(thisfile)
-  }
-  else
-  { warning("File names do not follow ymd encoding,
+  } else {
+    warning("File names do not follow ymd encoding,
               function get_recent_file_date_modified has been used")
-    return(get_recent_file_date_modified(path=path, match=match))
+    return(get_recent_file_date_modified(path = path, match = match))
   }
 }

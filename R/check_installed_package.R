@@ -7,7 +7,7 @@
 #' @param check the function should work as a boolean operator
 #' @return Boolean value whether package is installed.
 #' @examples
-#'   check_installed_package("dplyr")
+#' check_installed_package("dplyr")
 #'
 #' @export
 check_installed_package <- function(package_name, check = FALSE) {
@@ -19,9 +19,13 @@ check_installed_package <- function(package_name, check = FALSE) {
     }
   } else {
     if (!requireNamespace(package_name, quietly = TRUE)) {
-      stop(paste("Package", package_name, "required to use this function",
-                 "install this:", paste0("\ninstall.packages(\"",package_name, "\")")),
-           call. = FALSE)
+      stop(
+        paste(
+          "Package", package_name, "required to use this function",
+          "install this:", paste0("\ninstall.packages(\"", package_name, "\")")
+        ),
+        call. = FALSE
+      )
     }
   }
 }

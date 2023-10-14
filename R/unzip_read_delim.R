@@ -12,7 +12,6 @@
 #'
 #' @export
 unzip_read_delim <- function(zip_path, filename = NULL, ...) {
-
   ## Create a temporary directory, and extract the file into it
   temporary_dir <- tempfile()
   utils::unzip(zip_path, exdir = temporary_dir)
@@ -22,13 +21,14 @@ unzip_read_delim <- function(zip_path, filename = NULL, ...) {
 
   ## Determine the file to be read
   ## If the filename is specified, it will be read
-  if (!is.null(filename)){
-
+  if (!is.null(filename)) {
     file <- paste(temporary_dir, filename, sep = "/")
     # If there is more than 1 file in the .zip, an error will be given
   } else if (length(files) > 1) {
-    stop(paste0("There is more than 1 file in the .zip file. specify a filename. The files are:\n",
-                paste("- ",basename(files), collapse = "\n")))
+    stop(paste0(
+      "There is more than 1 file in the .zip file. specify a filename. The files are:\n",
+      paste("- ", basename(files), collapse = "\n")
+    ))
     ## If there is 1 file in the zip, it will be used
   } else {
     file <- files[1]
@@ -44,8 +44,11 @@ unzip_read_delim <- function(zip_path, filename = NULL, ...) {
       return(df)
     },
     ## If there is an error, the file will be deleted, and only then will the error be given
-    finally = {unlink(temporary_dir,
-                      force = TRUE,
-                      recursive = TRUE)})
-
+    finally = {
+      unlink(temporary_dir,
+        force = TRUE,
+        recursive = TRUE
+      )
+    }
+  )
 }
