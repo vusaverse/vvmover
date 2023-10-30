@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_current_datetime_column)
+export(calculate_na_percentage)
 export(check_installed_package)
 export(create_documentation)
 export(first_class)

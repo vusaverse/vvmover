@@ -2,15 +2,15 @@
 % Please edit documentation in R/get_ratio.R
 \name{get_ratio}
 \alias{get_ratio}
-\title{Get Ratio}
+\title{get_ratio}
 \usage{
 get_ratio(data_vector)
 }
 \arguments{
-\item{data_vector}{Column to check.}
+\item{data_vector}{column to check}
 }
 \description{
-This function gets the percentages for factor columns.
+Get percentages for factor columns
 }
 \seealso{
 Other assertions: 
