@@ -4,7 +4,7 @@
 #' @param data_vector column to check
 #' @family assertions
 #' @family tests
-get_ratio function(data_vector) {
+get_ratio <- function(data_vector) {
   
   # Initialize percent variable
   percent <- NULL
