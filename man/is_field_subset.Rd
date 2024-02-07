@@ -19,14 +19,5 @@ is_field_subset(field_name, df, column_names, column_types)
 This function checks if a field is a subset.
 We define a subset as a character field that contains fewer than 20 unique values.
 }
-\seealso{
-Other tests: 
-\code{\link{get_distribution}()},
-\code{\link{get_ratio}()}
-
-Other assertions: 
-\code{\link{get_distribution}()},
-\code{\link{get_ratio}()}
-}
 \concept{assertions}
 \concept{tests}

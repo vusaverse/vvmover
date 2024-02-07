@@ -16,11 +16,7 @@ URL: https://vusaverse.github.io/vvmover/, https://github.com/vusaverse/vvmover
 BugReports: https://github.com/vusaverse/vvmover/issues
 Imports: 
     dplyr,
-    janitor,
-    lubridate,
     magrittr,
-    purrr,
     readr,
     readxl,
-    tibble,
     utils
