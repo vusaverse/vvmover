@@ -19,25 +19,10 @@
     <loc>/reference/add_current_datetime_column.html</loc>
   </url>
   <url>
-    <loc>/reference/calculate_na_percentage.html</loc>
-  </url>
-  <url>
     <loc>/reference/check_installed_package.html</loc>
   </url>
   <url>
-    <loc>/reference/create_documentation.html</loc>
-  </url>
-  <url>
-    <loc>/reference/first_class.html</loc>
-  </url>
-  <url>
-    <loc>/reference/get_distribution.html</loc>
-  </url>
-  <url>
     <loc>/reference/get_last_modifed_date.html</loc>
-  </url>
-  <url>
-    <loc>/reference/get_ratio.html</loc>
   </url>
   <url>
     <loc>/reference/get_recent_file.html</loc>
@@ -53,15 +38,6 @@
   </url>
   <url>
     <loc>/reference/is_field_subset.html</loc>
-  </url>
-  <url>
-    <loc>/reference/is_unique_identifier.html</loc>
-  </url>
-  <url>
-    <loc>/reference/max_numeric.html</loc>
-  </url>
-  <url>
-    <loc>/reference/min_numeric.html</loc>
   </url>
   <url>
     <loc>/reference/move_files_pattern.html</loc>
