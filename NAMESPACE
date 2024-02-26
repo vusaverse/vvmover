@@ -2,6 +2,7 @@
 
 export("%>%")
 export(add_current_datetime_column)
+export(calculate_na_percentage)
 export(check_installed_package)
 export(get_last_modifed_date)
 export(get_recent_file)
