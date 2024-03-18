@@ -4,6 +4,7 @@
 [![R-CMD-check](https://github.com/vusaverse/vvmover/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/vusaverse/vvmover/actions/workflows/R-CMD-check.yaml)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/vusaverse/vvmover/badge)](https://www.codefactor.io/repository/github/vusaverse/vvmover)
+[![Codecov test coverage](https://codecov.io/gh/vusaverse/vvmover/branch/master/graph/badge.svg)](https://app.codecov.io/gh/vusaverse/vvmover?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/vvmover)](https://CRAN.R-project.org/package=vvmover/)
 <a href="https://diffify.com/R/vvmover" target="_blank"><img src="https://diffify.com/diffify-badge.svg" alt="The diffify page for the R package vvmover" style="width: 100px; max-width: 100%;"></a>
 [![CRAN last month downloads](https://cranlogs.r-pkg.org/badges/last-month/vvmover?color=green/)](https://cran.r-project.org/package=vvmover/)
